@@ -1,0 +1,163 @@
+/* Change font and background color for the navigation bar */
+.navbar {
+    background-color: #fff;
+    color: #333;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Change font size and weight for navigation links */
+  .navbar-nav .nav-link {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  /* Change background color and text color for active navigation link */
+  .navbar-nav .active .nav-link {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  /* Add background image and overlay to the hero section */
+  .hero {
+    background-image: url("https://i.imgur.com/Xo8Q2wV.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Style text and button in the hero section */
+  .hero h1 {
+    font-size: 5rem;
+    color: #fff;
+    text-shadow: 2px 2px #333;
+    margin-bottom: 2rem;
+  }
+  
+  .hero p {
+    font-size: 1.5rem;
+    color: #fff;
+    text-shadow: 2px 2px #333;
+    margin-bottom: 2rem;
+  }
+  
+  .hero button {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 1rem 2rem;
+    background-color: #ff2d55;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    box-shadow: 2px 2px #333;
+    transition: all 0.3s ease;
+  }
+  
+  .hero button:hover {
+    transform: translateY(-5px);
+    box-shadow: 4px 4px #333;
+  }
+  
+  /* Style the ride options section */
+  .section-ride-options {
+    background-color: #f5f5f5;
+    padding: 4rem 0;
+  }
+  
+  .section-ride-options h2 {
+    font-size: 3rem;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 3rem;
+  }
+  
+  .card {
+    border: none;
+    border-radius: 20px;
+    box-shadow: 2px 2px #333;
+    transition: all 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 4px 4px #333;
+  }
+  
+  .card-img-top {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+  
+  .card-title {
+    font-size: 2rem;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .card-text {
+    font-size: 1.5rem;
+    color: #666;
+    margin-bottom: 1rem;
+  }
+  
+  /* Style the sign up section */
+  .section-sign-up {
+    background-color: #333;
+    padding: 4rem 0;
+  }
+  
+  .section-sign-up h2 {
+    font-size: 3rem;
+    color: #fff;
+    font-weight: bold;
+    margin-bottom: 3rem;
+  }
+  
+  .form-control {
+    font-size: 1.5rem;
+    border-radius: 30px;
+    padding: 1.5rem 2rem;
+    margin-bottom: 2rem;
+    color: #333;
+  }
+  
+  .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0069d9;
+    border-color: #0062cc;
+    color: #fff;
+  }
+  
+
+  .button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
