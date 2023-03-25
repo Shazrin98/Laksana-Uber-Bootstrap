@@ -1,178 +1,374 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Uber Clone</title>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Uber Bootstrap clone</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
 
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" 
-    integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
-
-  <!-- Font Awesome icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
-    integrity="sha512-P07Ii6OxrZ6UPL9N25/UOgrN1FW0ia21vLb+A4if3F4D+0CJzP5My+NTrmS5Syo+5mKVW8P+wmD7JQ/K/nBzVw=="
-    crossorigin="anonymous" />
-
-	<!-- Custom styles -->
-	<link rel="stylesheet" href="styles.css">
 </head>
-<body>
-
-	<!-- Navigation -->
-	<nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
-		<div class="container">
-			<a class="navbar-brand" href="#">Uber</a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-				aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse" id="navbarNav">
-				<ul class="navbar-nav ml-auto">
-					<li class="nav-item active">
-						<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">Ride</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">Drive</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">Business</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">More</a>
-					</li>
-				</ul>
-				<button class="btn btn-primary my-2 my-sm-0" type="submit">Sign In</button>
-			</div>
-		</div>
-	</nav>
-
-	<!-- Hero section -->
-	<section class="hero">
+  <body>
+    <!--Navbar-->
+<nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
     <div class="container">
-      <div class="row">
-        <div class="col-lg-6 col-md-6 col-sm-12 col-12">
-          <h1>Move Your World</h1>
-          <p>Unlock your ride and your city with Uber. Our goal is to give you quick, reliable, and affordable rides whenever you need them. </p>
-          <button class="btn btn-primary btn-lg">Sign up to Ride</button>
-        </div>
-        <div class="col-lg-6 col-md-6 col-sm-12 col-12">
-          <img src="https://i.imgur.com/diGk5vf.png" alt="uber car" class="img-fluid">
-        </div>
-      </div>
+    <a href="#" class="navbar-brand">Uber Bootstrap Clone</a>
+<button 
+class="navbar-toggler" 
+type="button" 
+data-bs-toggle="collapse" 
+data-bs-target="#navmenu"
+>
+<span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse" id="navmenu"></div>
+
+<ul class="navbar-nav ms-auto">
+    <li class="nav-item">
+        <a href="#login" class="nav-link">Login</a>
+    </li>
+    <li class="nav-item">
+        <a href="#signup" class="nav-link">Sign Up</a>
+    </li>
+
+</ul>
     </div>
-  </section>
-  
-<!-- Ride Options -->
-<section class="section-ride-options">
+</nav>
+
+<!--Showcase-->
+<section class="bg-light text-dark p-0 p-lg-0 pt-lg-0 text-center text-sm-start">
+    <div class="container">
+        <div class="d-sm-flex align-items-center justify-content-between">
+        <div>
+<h1>.<span class="text-warning"> (By Shafiq Nazrin)</span></h1>
+<br/>
+<br/>
+<br/>
+<h1>
+  Get in the driver’s seat and get paid
+</h1>
+<br/>
+<h5>
+  Drive on the platform with the largest network of active riders.
+</h5>
+<br/>
+<button class="btn btn-dark btn-md" data-bs-toggle="modal" data-bs-target="#enroll" >Sign Up To Drive</button>
+<a href="#">Learn more about driving and delivering</a>
+<div>
+    <img src="img/showcase.svg" alt="" class="img-fluid w-50 d-none d-sm-block">
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!--Uber Business Section-->
+<section id="uberBusiness" class="p-5">
   <div class="container">
-    <h2 class="text-center mb-5">Ride Options</h2>
-    <div class="row">
-      <div class="col-md-4 mb-4 mb-md-0">
-        <div class="card">
-          <img class="card-img-top" src="https://via.placeholder.com/350x200" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">UberX</h5>
-            <p class="card-text">The most affordable option for everyday rides.</p>
-          </div>
+  <div class="row align-items-center justify-content-between">
+    <div class="col-md p-5">
+      <h2>Uber for Business</h2>
+      <p class="lead">
+        Transform the way your company moves and feeds its people.
+      </p>
+      
+      <a href="" class="btn btn-dark mt-3">
+           See how
+      </a>
+  </div>
+  <div class="col-md">
+      <img src="img/highoffice.svg" class="img-fluid" alt="">
+  </div>
+  </div>
+  </div>
+     </section>
+
+<!--Uber One Section-->
+<section id="uberOne" class="p-5">
+  <div class="container">
+  <div class="row align-items-center justify-content-between">
+    <div class="col-lg p-5">
+      <h2>Save on Uber and Uber Eats with Uber One membership</h2>
+      <p class="lead">
+        With $0 Delivery Fee and 5% off eligible rides and eats orders, members save an average of $27 per month.*
+      </p>
+      <p class="lead">
+        *Terms apply. Average savings are based on members in your country and do not include subscription price.
+      </p>
+      <a href="" class="btn btn-dark mt-3">
+           Sign Up To Save
+      </a>
+  </div>
+  <div class="col-md">
+      <img src="img/foodontable.svg" class="img-fluid" alt="">
+  </div>
+  </div>
+  </div>
+     </section>
+
+
+<!--Safety Boxes-->
+<section class="p-5">
+    <div class="container">
+        <div class="row text-start g-6">
+          <h1>
+            Focused on safety, wherever you go
+          </h1>
+<div class="col-md">
+    <div class="card bg-light text-dark">
+        <div class="card-body text-start">
+            <div class="h1 mb-3">
+              <img src="img/drivingpassenger.svg" class="img-fluid" alt="">
+            </div>
+            <h4 class="card-title mb-3">
+              Our commitment to your safety
+            </h4>
+            <p class="card-text">
+              With every safety feature and every standard in our Community Guidelines, we're committed to helping to create a safe environment for our users.
+            </p>
+            <a href="#">Read about our Community Guidelines</a>
+            <a href="#">See all safety features</a>
         </div>
-      </div>
-      <div class="col-md-4 mb-4 mb-md-0">
-        <div class="card">
-          <img class="card-img-top" src="https://via.placeholder.com/350x200" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">UberXL</h5>
-            <p class="card-text">The affordable option for groups up to 6.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4 mb-4 mb-md-0">
-        <div class="card">
-          <img class="card-img-top" src="https://via.placeholder.com/350x200" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">UberBLACK</h5>
-            <p class="card-text">Premium rides in high-end cars.</p>
-          </div>
-        </div>
-      </div>
     </div>
+</div>
+
+<div class="col-md">
+  <div class="card bg-light text-dark">
+      <div class="card-body text-start">
+          <div class="h1 mb-3">
+            <img src="img/carsintraffic.svg" class="img-fluid" alt="">
+          </div>
+          <h4 class="card-title mb-3">
+            Setting 10,000+ cities in motion
+          </h4>
+          <p class="card-text">
+            The app is available in thousands of cities worldwide, so you can request a ride even when you’re far from home.
+          </p>
+          <a href="#">View all cities</a>
+      </div>
+  </div>
+</div>
+        </div>
+    </div>
+</section>
+
+
+<!--About, Newsroom, Citizenship-->
+<section id="abNewsCit" class="p-5 bg-light">
+  <div class="container">
+      <div class="row g-4">
+          <!--About Us-->
+          <div class="col-md-6 col-lg-4">
+              <div class="card bg-light">
+                  <div class="card-body text-start">
+                      <img src="img/aboutus.jpg" 
+                      class="rounded-circle mb-3"
+                      alt="">
+                      <h3 class="card-title mb-3">About us</h3>
+                      <p class="card-text">
+                        Find out how we started, what drives us, and how we’re reimagining how the world moves.
+                      </p>
+                     <a href="#" class="">Learn more about Uber
+                      </a>
+                  </div>
+              </div>
+          </div>
+          <!--Newsroom-->
+          <div class="col-md-6 col-lg-4">
+            <div class="card bg-light">
+                <div class="card-body text-start">
+                    <img src="img/aboutus.jpg" 
+                    class="rounded-circle mb-3"
+                    alt="">
+                    <h3 class="card-title mb-3">Newsroom</h3>
+                    <p class="card-text">
+                      See announcements about our latest releases, initiatives, and partnerships.
+                    </p>
+                   <a href="#" class="">Go to Newsroom
+                    </a>
+                </div>
+            </div>
+        </div>
+  <!--Global Citizenship-->
+  <div class="col-md-6 col-lg-4">
+    <div class="card bg-light">
+        <div class="card-body text-start">
+            <img src="img/aboutus.jpg" 
+            class="rounded-circle mb-3"
+            alt="">
+            <h3 class="card-title mb-3">Global citizenship</h3>
+            <p class="card-text">
+              Read about our commitment to making a positive impact in the cities we serve.
+           <a href="#" class="">See our partnerships
+            </a>
+        </div>
+    </div>
+</div>
+
+<!--Download Boxes-->
+<section class="p-5">
+  <div class="container">
+    <h1>
+      There’s more to love in the apps
+    </h1>
+      <div class="row text-start g-2">
+<div>
+  <div class="card bg-light text-dark">
+      <div class="card-body text-start">
+          <div class="h1 mb-3">
+          <i class="bi bi-person"></i>
+          </div>
+          <h3 class="card-title mb-3">
+              Download the Driver app
+          </h3>
+          <a href="#" class="btn btn-dark">>>></a>
+      </div>
+  </div>
+</div>
+<div>
+  <div class="card bg-light text-dark">
+      <div class="card-body text-start">
+          <div class="h1 mb-3">
+          <i class="bi bi-car"></i>
+          </div>
+          <h3 class="card-title mb-3">
+              Download the Uber app
+          </h3>
+          <a href="#" class="btn btn-dark">>>></a>
+      </div>
+  </div>
+</div>
+
+      </div>
   </div>
 </section>
-<!-- Sign Up -->
-<section class="section-sign-up">
+
+
+<!-- Sign Up Boxes-->
+<section class="p-5">
   <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-md-8 col-lg-6">
-        <h2 class="text-center mb-4">Sign up to ride</h2>
-        <form>
-          <div class="form-group">
-            <label for="inputName">Name</label>
-            <input type="text" class="form-control" id="inputName" placeholder="Enter your name">
-          </div>
-          <div class="form-group">
-            <label for="inputEmail">Email address</label>
-            <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" placeholder="Enter email">
-            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-          </div>
-          <div class="form-group">
-            <label for="inputPassword">Password</label>
-            <input type="password" class="form-control" id="inputPassword" placeholder="Password">
-          </div>
-          <div class="form-group">
-            <label for="inputConfirmPassword">Confirm Password</label>
-            <input type="password" class="form-control" id="inputConfirmPassword" placeholder="Confirm Password">
-          </div>
-          <button type="submit" class="btn btn-primary btn-block">Sign Up</button>
-        </form>
+      <div class="row text-start g-4">
+<div class="col-md">
+  <div class="card bg-light text-dark">
+      <div class="card-body text-start">
+          <h3 class="card-title mb-3">
+              Sign Up To Drive
+          </h3>
+          <a href="#" class="btn btn-dark">>>></a>
       </div>
-    </div>
+  </div>
+</div>
+<div class="col-md">
+  <div class="card bg-light text-dark">
+      <div class="card-body text-start">
+          <h3 class="card-title mb-3">
+            Sign Up To Ride
+          </h3>
+          <a href="#" class="btn btn-dark">>>></a>
+      </div>
+  </div>
+</div>
+
+      </div>
   </div>
 </section>
-<!-- Footer -->
-<footer class="bg-dark text-white">
-  <div class="container py-4">
-    <div class="row">
-      <div class="col-md-4 mb-3">
-        <h5>About Us</h5>
-        <p>We are a transportation company that is committed to providing safe and reliable rides to our customers.</p>
-      </div>
-      <div class="col-md-4 mb-3">
-        <h5>Services</h5>
-        <ul class="list-unstyled">
-          <li><a href="#">Ride</a></li>
-          <li><a href="#">Drive</a></li>
-          <li><a href="#">Eat</a></li>
-          <li><a href="#">Freight</a></li>
-          <li><a href="#">Business</a></li>
-          <li><a href="#">Transit</a></li>
-        </ul>
-      </div>
-      <div class="col-md-4 mb-3">
-        <h5>Connect with Us</h5>
-        <ul class="list-unstyled">
-          <li><a href="#"><i class="fab fa-facebook-f"></i> Facebook</a></li>
-          <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
-          <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
-          <li><a href="#"><i class="fab fa-linkedin-in"></i> LinkedIn</a></li>
-        </ul>
-      </div>
+
+
+
+
+
+
+<!--Contact Info-->
+<section class="p-5">
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-md">
+                <h2 class="text-center mb-4">Contact Info</h2>
+<ul class="list-group list-group-flush lead">
+    <li class="list-group-item">
+        <span class="fw-bold">Main Location</span> Subang Jaya
+    </li>
+    <li class="list-group-item">
+        <span class="fw-bold">Phone Number</span> 013-2421077
+    </li>
+    <li class="list-group-item">
+        <span class="fw-bold">LindedIn Username</span> shafiqnazrin
+    </li>
+    <li class="list-group-item">
+        <span class="fw-bold">GitHub Username</span> Shazrin98
+    </li>
+</ul>
+            </div>
+            <div class="col-md">
+
+            </div>
+        </div>
     </div>
-    <hr>
-    <div class="row">
-      <div class="col-md-6">
-        <p>&copy; 2023 Uber Technologies Inc.</p>
-      </div>
-      <div class="col-md-6 text-md-right">
-        <ul class="list-inline">
-          <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
-          <li class="list-inline-item"><a href="#">Terms of Use</a></li>
-          <li class="list-inline-item"><a href="#">Legal Notices</a></li>
-        </ul>
-      </div>
+</section>
+
+<!--Footer-->
+<footer class="p-5 bg-dark text-white text-center position-relative">
+    <div class="container">
+        <p class="lead">Copyright &copy; 2023 Uber Bootstrap Clone</p>
+        <a href="#" class="position-absolute bottom-0 end-0 p-5">
+            <i class="bi bi-arrow-up-circle h1">
+
+            </i>
+        </a>
     </div>
-  </div>
+
 </footer>
+
+
+<!-- Modal -->
+<div class="modal fade" id="enroll" tabindex="-1" aria-labelledby="enrollLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="enrollLabel">Joining Form</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p class="lead">What are your necessary details?
+          </p>
+<form action="">
+    <div class="mb-3">
+        <label for="name" class="col-form-label">
+            Name:
+        </label>
+        <input type="text" class="form-control" id="name">
+    </div>
+    <div class="mb-3">
+        <label for="Email" class="col-form-label">
+            Email:
+        </label>
+        <input type="text" class="form-control" id="Email">
+    </div>
+    <div class="mb-3">
+        <label for="Phone" class="col-form-label">
+            Phone:
+        </label>
+        <input type="text" class="form-control" id="Phone">
+    </div>
+</form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>  
+
+
+
+
+</body>
+</html>
