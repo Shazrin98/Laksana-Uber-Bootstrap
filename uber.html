@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Uber Clone</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" 
+    integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+
+  <!-- Font Awesome icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
+    integrity="sha512-P07Ii6OxrZ6UPL9N25/UOgrN1FW0ia21vLb+A4if3F4D+0CJzP5My+NTrmS5Syo+5mKVW8P+wmD7JQ/K/nBzVw=="
+    crossorigin="anonymous" />
+
+	<!-- Custom styles -->
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+	<!-- Navigation -->
+	<nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+		<div class="container">
+			<a class="navbar-brand" href="#">Uber</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+				aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item active">
+						<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Ride</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Drive</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Business</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">More</a>
+					</li>
+				</ul>
+				<button class="btn btn-primary my-2 my-sm-0" type="submit">Sign In</button>
+			</div>
+		</div>
+	</nav>
+
+	<!-- Hero section -->
+	<section class="hero">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+          <h1>Move Your World</h1>
+          <p>Unlock your ride and your city with Uber. Our goal is to give you quick, reliable, and affordable rides whenever you need them. </p>
+          <button class="btn btn-primary btn-lg">Sign up to Ride</button>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+          <img src="https://i.imgur.com/diGk5vf.png" alt="uber car" class="img-fluid">
+        </div>
+      </div>
+    </div>
+  </section>
+  
+<!-- Ride Options -->
+<section class="section-ride-options">
+  <div class="container">
+    <h2 class="text-center mb-5">Ride Options</h2>
+    <div class="row">
+      <div class="col-md-4 mb-4 mb-md-0">
+        <div class="card">
+          <img class="card-img-top" src="https://via.placeholder.com/350x200" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">UberX</h5>
+            <p class="card-text">The most affordable option for everyday rides.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4 mb-md-0">
+        <div class="card">
+          <img class="card-img-top" src="https://via.placeholder.com/350x200" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">UberXL</h5>
+            <p class="card-text">The affordable option for groups up to 6.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4 mb-md-0">
+        <div class="card">
+          <img class="card-img-top" src="https://via.placeholder.com/350x200" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">UberBLACK</h5>
+            <p class="card-text">Premium rides in high-end cars.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Sign Up -->
+<section class="section-sign-up">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-8 col-lg-6">
+        <h2 class="text-center mb-4">Sign up to ride</h2>
+        <form>
+          <div class="form-group">
+            <label for="inputName">Name</label>
+            <input type="text" class="form-control" id="inputName" placeholder="Enter your name">
+          </div>
+          <div class="form-group">
+            <label for="inputEmail">Email address</label>
+            <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" placeholder="Enter email">
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+          </div>
+          <div class="form-group">
+            <label for="inputPassword">Password</label>
+            <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+          </div>
+          <div class="form-group">
+            <label for="inputConfirmPassword">Confirm Password</label>
+            <input type="password" class="form-control" id="inputConfirmPassword" placeholder="Confirm Password">
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">Sign Up</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Footer -->
+<footer class="bg-dark text-white">
+  <div class="container py-4">
+    <div class="row">
+      <div class="col-md-4 mb-3">
+        <h5>About Us</h5>
+        <p>We are a transportation company that is committed to providing safe and reliable rides to our customers.</p>
+      </div>
+      <div class="col-md-4 mb-3">
+        <h5>Services</h5>
+        <ul class="list-unstyled">
+          <li><a href="#">Ride</a></li>
+          <li><a href="#">Drive</a></li>
+          <li><a href="#">Eat</a></li>
+          <li><a href="#">Freight</a></li>
+          <li><a href="#">Business</a></li>
+          <li><a href="#">Transit</a></li>
+        </ul>
+      </div>
+      <div class="col-md-4 mb-3">
+        <h5>Connect with Us</h5>
+        <ul class="list-unstyled">
+          <li><a href="#"><i class="fab fa-facebook-f"></i> Facebook</a></li>
+          <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+          <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+          <li><a href="#"><i class="fab fa-linkedin-in"></i> LinkedIn</a></li>
+        </ul>
+      </div>
+    </div>
+    <hr>
+    <div class="row">
+      <div class="col-md-6">
+        <p>&copy; 2023 Uber Technologies Inc.</p>
+      </div>
+      <div class="col-md-6 text-md-right">
+        <ul class="list-inline">
+          <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+          <li class="list-inline-item"><a href="#">Terms of Use</a></li>
+          <li class="list-inline-item"><a href="#">Legal Notices</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
